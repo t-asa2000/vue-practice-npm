@@ -1,12 +1,12 @@
 <script>
 	import TAAppBar from '../molecuels/TAAppBar.vue';
-	import TANavigation from '../molecuels/TANavigation.vue';
+	//import TANavigation from '../molecuels/TANavigation.vue';
 
 	export default {
 		name: "TAHeader",
 		components: {
 			TAAppBar,
-			TANavigation
+			//TANavigation
 		},
 		props: {
 			title: {
@@ -38,10 +38,10 @@
 
 		<!-- ナビゲーションドロワー -->
 		<!-- 1280px以上で常時表示 -->
-		<TANavigation :items="menu" class="d-none d-lg-flex" always />
+		<!--TANavigation :items="menu" class="d-none d-lg-flex" always /-->
 
 		<!-- 1280px未満の場合は左上のアイコンで切り替え -->
-		<TANavigation v-model="drawer" :items="menu" class="d-lg-none" />
+		<!--TANavigation v-model="drawer" :items="menu" class="d-lg-none" /-->
 	</div>
 </template>
 
